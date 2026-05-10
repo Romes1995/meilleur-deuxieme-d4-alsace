@@ -17,12 +17,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5175"],
+    allow_origins=["http://localhost:5176"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-CP_NO    = 0  # TODO: remplacer par le numéro de compétition D4 Alsace (epreuves.fff.fr)
+CP_NO    = 436240
 GROUPS   = list("ABCDEFGHI")
 SITE     = "https://epreuves.fff.fr"
 API_BASE = f"{SITE}/api/data"
